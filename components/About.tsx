@@ -11,7 +11,7 @@ export default function About(){
         <h2 className="section-title">Marketing que mueve resultados reales</h2>
         <p className="section-desc">
             En Reflector nos mueven las buenas ideas y el crecimiento de los negocios.
-Creemos que simplificarte la vida es la mejor forma de ayudarte.
+Tomamos la parte difícil del marketing para que tú puedas concentrarte en lo importante..
 Combinamos estrategia, creatividad y tecnología para aplicar las mejores prácticas del marketing moderno con un objetivo claro: llevar tu emprendimiento al siguiente nivel.
 Cada proyecto se diseña a la medida de tus objetivos.
         </p>
