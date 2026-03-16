@@ -10,7 +10,10 @@ export default function About(){
         <p className="section-label">Quiénes somos</p>
         <h2 className="section-title">Marketing que mueve resultados reales</h2>
         <p className="section-desc">
-            En Reflector somos un equipo apasionado por las marcas y los resultados. Combinamos estrategia, creatividad y tecnología para construir presencias digitales que generan impacto medible. No hacemos marketing genérico: diseñamos cada campaña a la medida de tu negocio.
+            En Reflector nos mueven las buenas ideas y el crecimiento de los negocios.
+Creemos que simplificarte la vida es la mejor forma de ayudarte.
+Combinamos estrategia, creatividad y tecnología para aplicar las mejores prácticas del marketing moderno con un objetivo claro: llevar tu emprendimiento al siguiente nivel.
+Cada proyecto se diseña a la medida de tus objetivos.
         </p>
         <div className="about-pills">
             <span className="pill">Estrategia</span>

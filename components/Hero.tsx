@@ -2,9 +2,9 @@ export default function Hero(){
     return(
         <section className="hero" id="inicio">
             <span className="hero-badge-1">Agencia de Marketing Digital</span>
-            <h1>Tu marca<br />bajo el <span>reflector</span></h1>
+            <h1>Impulsamos<br />tú <span>negocio</span></h1>
             <p className="hero-sub">
-      Potenciamos marcas con estrategia, creatividad y datos. Hacemos que tu negocio brille donde más importa.
+      Potenciamos tu empresa con estrategia, creatividad y datos. Nos enfocamos en atraer clientes y hacer crecer tus ventas.
             </p>
             <div className="hero-actions">
             <a href="#servicios" className="btn-primary">Ver servicios</a>

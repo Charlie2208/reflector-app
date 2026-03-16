@@ -5,7 +5,7 @@ export default function Footer(){
       <div className="footer-brand">
         <img src="logo.png" alt="Reflector" />
         <div className="footer-brand-name">Reflector</div>
-        <p>Agencia de marketing digital que ilumina marcas con estrategia, creatividad y resultados reales.</p>
+        <p>Agencia creativa de marketing digital enfocada en estrategias de adquisición y crecimiento.</p>
       </div>
       <div className="footer-col">
         <h5>Servicios</h5>
@@ -30,9 +30,9 @@ export default function Footer(){
       <div className="footer-col">
         <h5>Contacto</h5>
         <ul>
-          <li><a href="#">hola@reflectoragencia.com</a></li>
+          <li><a href="#">reflectoram@gmail.com</a></li>
           <li><a href="#">WhatsApp</a></li>
-          <li><a href="#">Buenos Aires, AR</a></li>
+          <li><a href="#">Santiago, CL</a></li>
         </ul>
       </div>
     </div>
