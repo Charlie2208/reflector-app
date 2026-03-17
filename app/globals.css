@@ -899,6 +899,7 @@ body {
       .footer-top { grid-template-columns: 1fr 1fr; }
       .stats-bar { padding: 28px 24px; }
       .stat-divider { display: none; }
+      .about-visual {display: none;}
     }
 
     @media (max-width: 600px) {

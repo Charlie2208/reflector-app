@@ -31,8 +31,8 @@ const openSans = Open_Sans({
 // };
 
 export const metadata: Metadata = {
-  title: "Reflector — Agencia de Marketing Digital",
-  description: "Agencia creativa de marketing digital enfocada en estrategias de adquisición y crecimiento.",
+  title: "Reflector | Agencia de Marketing Digital en Santiago, Chile",
+  description: "Agencia de marketing digital en Santiago. Especialistas en Meta Ads, Google Ads, gestión de redes sociales, branding y estrategia digital. Hacemos crecer tu marca.",
 };
 
 export default function RootLayout({
