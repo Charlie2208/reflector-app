@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Reflector | Agencia de Marketing Digital en Santiago, Chile",
     description: "Agencia de marketing digital en Santiago. Especialistas en Meta Ads, Google Ads, gestión de redes sociales, branding y estrategia digital. Hacemos crecer tu marca.",
-    url: "https://reflector-app-seven.vercel.app",
+    url: "https://https://reflector.cl/",
     siteName: "Reflector",
     images: [
       {
