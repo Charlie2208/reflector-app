@@ -33,6 +33,22 @@ const openSans = Open_Sans({
 export const metadata: Metadata = {
   title: "Reflector | Agencia de Marketing Digital en Santiago, Chile",
   description: "Agencia de marketing digital en Santiago. Especialistas en Meta Ads, Google Ads, gestión de redes sociales, branding y estrategia digital. Hacemos crecer tu marca.",
+  openGraph: {
+    title: "Reflector | Agencia de Marketing Digital en Santiago, Chile",
+    description: "Agencia de marketing digital en Santiago. Especialistas en Meta Ads, Google Ads, gestión de redes sociales, branding y estrategia digital. Hacemos crecer tu marca.",
+    url: "https://reflector-app-seven.vercel.app",
+    siteName: "Reflector",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Reflector Agencia de Marketing Digital",
+      },
+    ],
+    locale: "es_CL",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
