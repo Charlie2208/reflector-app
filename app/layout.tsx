@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from 'next/script'
 import { Geist, Geist_Mono, Anton, Open_Sans } from "next/font/google";
 import "./globals.css";
 
@@ -54,9 +55,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-     <body className={`${anton.variable} ${openSans.variable}`}>
+    <html lang="es">
+      <body className={`${anton.variable} ${openSans.variable}`}>
         {children}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-QHN0Y7JVW0"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-QHN0Y7JVW0');
+          `}
+        </Script>
       </body>
     </html>
   );
