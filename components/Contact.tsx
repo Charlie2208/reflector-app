@@ -51,7 +51,7 @@ export default function Contact() {
             </div>
             <div>
               <div className="contact-item-label">Email</div>
-              <div className="contact-item-text">reflectoram@gmail.com</div>
+              <div className="contact-item-text">hola@reflector.cl</div>
             </div>
           </div>
           <div className="contact-item">
