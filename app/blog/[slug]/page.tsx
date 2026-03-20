@@ -1,28 +1,42 @@
 import { client } from '@/sanity/lib/client'
 import { postQuery } from '@/sanity/lib/queries'
 import { PortableText } from '@portabletext/react'
+import { urlFor } from '@/sanity/lib/image'
+import Image from 'next/image'
 
-export default async function PostPage({ params }: { params: { slug: string } }) {
-  const post = await client.fetch(postQuery, { slug: params.slug })
+export default async function PostPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const post = await client.fetch(postQuery, { slug })
 
   if (!post) return <div>Post no encontrado</div>
 
   return (
-    <main>
-      <article className="post-article">
-        <p className="section-label">Blog</p>
-        <h1 className="section-title">{post.title}</h1>
-        <p className="post-date">
-          {new Date(post.publishedAt).toLocaleDateString('es-CL', {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric',
-          })}
-        </p>
-        <div className="post-body">
-          <PortableText value={post.body} />
+  <main style={{ background: '#fff' }}>
+    <article className="post-article">
+      <p className="section-label">Blog</p>
+      <h1 className="section-title">{post.title}</h1>
+      <p className="post-date">
+        {new Date(post.publishedAt).toLocaleDateString('es-CL', {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric',
+        })}
+      </p>
+      {post.mainImage && (
+        <div style={{ marginBottom: '2.5rem' }}>
+          <Image
+            src={urlFor(post.mainImage).width(720).url()}
+            alt={post.title}
+            width={720}
+            height={400}
+            style={{ width: '100%', height: 'auto', borderRadius: '8px' }}
+          />
         </div>
-      </article>
-    </main>
-  )
+      )}
+      <div className="post-body">
+        <PortableText value={post.body} />
+      </div>
+    </article>
+  </main>
+)
 }

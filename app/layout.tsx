@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Script from 'next/script'
-import { Geist, Geist_Mono, Anton, Open_Sans } from "next/font/google";
+import { Geist, Geist_Mono, Anton, Open_Sans, Lora } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -22,6 +22,11 @@ const anton = Anton({
 const openSans = Open_Sans({
   subsets: ["latin"],
   variable: "--font-open-sans",
+});
+
+const lora = Lora({
+  subsets: ["latin"],
+  variable: "--font-lora",
 });
 
 
@@ -56,7 +61,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={`${anton.variable} ${openSans.variable}`}>
+      <body className={`${anton.variable} ${openSans.variable} ${lora.variable}`}>
         {children}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-QHN0Y7JVW0"
