@@ -1,12 +1,14 @@
 import { client } from '@/sanity/lib/client'
 import { postsQuery } from '@/sanity/lib/queries'
 import Link from 'next/link'
+import NavbarF from '@/components/NavbarF'
 
 export default async function BlogPage() {
   const posts = await client.fetch(postsQuery)
 
   return (
     <main style={{ background: '#fff' }}>
+      <NavbarF />
       <section className="blog-section">
         <p className="section-label">Blog</p>
         <h1 className="section-title">Tendencias y estrategias</h1>

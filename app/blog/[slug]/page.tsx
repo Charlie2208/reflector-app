@@ -3,6 +3,7 @@ import { postQuery } from '@/sanity/lib/queries'
 import { PortableText } from '@portabletext/react'
 import { urlFor } from '@/sanity/lib/image'
 import Image from 'next/image'
+import NavbarF from '@/components/NavbarF'
 
 export default async function PostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
@@ -12,6 +13,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
 
   return (
   <main style={{ background: '#fff' }}>
+    <NavbarF />
     <article className="post-article">
       <p className="section-label">Blog</p>
       <h1 className="section-title">{post.title}</h1>

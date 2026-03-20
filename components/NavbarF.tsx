@@ -1,8 +1,15 @@
+import Image from "next/image"
+
 export default function NavbarF() {
   return (
     <nav>
     <a href="#" className="nav-logo">
-      <img src="logo.png" alt="Reflector Logo" />
+      <Image 
+        src="/logo.png" 
+        alt="Reflector Logo" 
+        width={48}
+        height={48}
+        />
       <span className="nav-logo-text">Reflector</span>
     </a>
     <ul className="nav-links">
