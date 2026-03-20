@@ -9,7 +9,7 @@ export default function NavbarF() {
       <li><a href="#nosotros">Nosotros</a></li>
       <li><a href="#servicios">Servicios</a></li>
       <li><a href="#proceso">Proceso</a></li>
-      <li><a href="#testimonios">Clientes</a></li>
+      <li><a href="/blog">Blog</a></li>
       <li><a href="#contacto" className="nav-cta">Hablemos</a></li>
     </ul>
   </nav>
