@@ -2,6 +2,7 @@ import { client } from '@/sanity/lib/client'
 import { postQuery } from '@/sanity/lib/queries'
 import { PortableText } from '@portabletext/react'
 import { urlFor } from '@/sanity/lib/image'
+import Link from 'next/link'
 import Image from 'next/image'
 import NavbarF from '@/components/NavbarF'
 import Footer from '@/components/Footer'
@@ -17,6 +18,9 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
   <main style={{ background: '#fff' }}>
     <NavbarF />
     <article className="post-article">
+      <Link href="/blog" className="back-to-blog">
+        ← Volver al blog
+      </Link>
       <p className="section-label">Blog</p>
       <h1 className="section-title">{post.title}</h1>
       <p className="post-date">

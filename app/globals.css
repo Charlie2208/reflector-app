@@ -116,6 +116,61 @@ body {
 
     .nav-cta:hover { opacity: 0.85; }
 
+    /* ─── HAMBURGUESA ───────────────────────────────────────────── */
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  z-index: 101;
+}
+
+.hamburger-line {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--dark);
+  border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.hamburger-line.open:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.hamburger-line.open:nth-child(2) {
+  opacity: 0;
+}
+.hamburger-line.open:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  .nav-hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(247, 246, 244, 0.98);
+    backdrop-filter: blur(12px);
+    flex-direction: column;
+    padding: 1.5rem 5vw;
+    gap: 1.2rem;
+    border-bottom: 1px solid rgba(0,39,255,0.08);
+  }
+
+  .nav-links.nav-open {
+    display: flex;
+  }
+}
+
     /* ─── HERO ─────────────────────────────────────────────────── */
     .hero {
       min-height: 100vh;
@@ -1053,4 +1108,21 @@ body {
   margin: 2rem 0;
   font-style: italic;
   color: #555;
+}
+
+.back-to-blog {
+  display: inline-block;
+  font-family: var(--font-open-sans);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--azul);
+  text-decoration: none;
+  margin-bottom: 2rem;
+  transition: gap 0.2s;
+}
+
+.back-to-blog:hover {
+  opacity: 0.75;
 }
