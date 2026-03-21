@@ -1,8 +1,22 @@
 import { client } from '@/sanity/lib/client'
 import { postsQuery } from '@/sanity/lib/queries'
 import Link from 'next/link'
+import { Metadata } from 'next'
 import NavbarF from '@/components/NavbarF'
 import Footer from '@/components/Footer'
+
+export const metadata: Metadata = {
+  title: 'Blog | Reflector Agencia de Marketing Digital',
+  description: 'Artículos sobre marketing digital, estrategia, redes sociales y crecimiento de marcas. Contenido creado por Reflector, agencia de marketing en Santiago, Chile.',
+  openGraph: {
+    title: 'Blog | Reflector Agencia de Marketing Digital',
+    description: 'Artículos sobre marketing digital, estrategia, redes sociales y crecimiento de marcas.',
+    url: 'https://reflector.cl/blog',
+    siteName: 'Reflector',
+    locale: 'es_CL',
+    type: 'website',
+  },
+}
 
 export default async function BlogPage() {
   const posts = await client.fetch(postsQuery)

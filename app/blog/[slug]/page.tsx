@@ -6,6 +6,37 @@ import Link from 'next/link'
 import Image from 'next/image'
 import NavbarF from '@/components/NavbarF'
 import Footer from '@/components/Footer'
+import { Metadata } from 'next'
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params
+  const post = await client.fetch(postQuery, { slug })
+
+  if (!post) return {}
+
+  return {
+    title: `${post.title} | Reflector Blog`,
+    description: post.excerpt,
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      url: `https://reflector.cl/blog/${slug}`,
+      siteName: 'Reflector',
+      locale: 'es_CL',
+      type: 'article',
+      images: post.mainImage
+        ? [
+            {
+              url: urlFor(post.mainImage).width(1200).height(630).url(),
+              width: 1200,
+              height: 630,
+              alt: post.title,
+            },
+          ]
+        : [],
+    },
+  }
+}
 
 
 export default async function PostPage({ params }: { params: Promise<{ slug: string }> }) {
