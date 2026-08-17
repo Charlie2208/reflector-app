@@ -240,11 +240,15 @@ body {
 
     .hero-sub {
       font-size: 1.05rem;
-      color: var(--gray);
+      color: var(--white);
       max-width: 560px;
       line-height: 1.7;
       margin-top: 24px;
       position: relative;
+    }
+
+    .no-wrap {
+      white-space: nowrap;
     }
 
     .hero-actions {

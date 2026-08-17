@@ -3,6 +3,7 @@ import Script from 'next/script'
 import { Geist, Geist_Mono, Anton, Open_Sans, Lora } from "next/font/google";
 import "./globals.css";
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -39,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Reflector | Agencia de Marketing Digital en Santiago, Chile",
     description: "Agencia de marketing digital en Santiago. Especialistas en Meta Ads, Google Ads, gestión de redes sociales, branding y estrategia digital. Hacemos crecer tu marca.",
-    url: "https://https://reflector.cl/",
+    url: "https://reflector.cl/",
     siteName: "Reflector",
     images: [
       {
@@ -63,6 +64,44 @@ export default function RootLayout({
     <html lang="es">
       <body className={`${anton.variable} ${openSans.variable} ${lora.variable}`}>
         {children}
+        <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "MarketingAgency",
+            "name": "Reflector Agencia de Marketing Digital",
+            "url": "https://reflector.cl",
+            "logo": "https://reflector.cl/logo.png",
+            "description": "Agencia creativa de marketing digital enfocada en estrategias de adquisición y crecimiento de pequeños negocios en Santiago, Chile.",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Santiago",
+              "addressRegion": "Región Metropolitana",
+              "addressCountry": "CL"
+            },
+            "telephone": "+56956075020",
+            "email": "hola@reflector.cl",
+            "areaServed": "Chile",
+            "serviceType": [
+              "Estrategia Digital",
+              "Meta Ads",
+              "Google Ads",
+              "Ecommerce",
+              "Shopify",
+              "Email-marketing",
+              "Gestión de Redes Sociales",
+              "Branding",
+              "SEO"
+            ],
+            "sameAs": [
+             "https://www.instagram.com/reflectoram",
+             "https://www.facebook.com/profile.php?id=61585018786233",
+             "https://www.tiktok.com/@reflectoram"
+            ]
+          })
+        }}
+/>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-QHN0Y7JVW0"
           strategy="afterInteractive"
