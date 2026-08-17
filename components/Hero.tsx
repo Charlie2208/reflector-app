@@ -12,8 +12,9 @@ export default function Hero(){
                 </p>
             </div>
             <div className="hero-actions">
-            <a href="#servicios" className="btn-primary">Ver servicios</a>
-            <a href="#contacto" className="btn-outline">Hablemos</a>
+            {/* <a href="#servicios" className="btn-primary">Ver servicios</a>
+            <a href="#contacto" className="btn-outline">Hablemos</a> */}
+                <a href="https://wa.me/56956075020" target="_blank" className="btn-primary btn-pulse">Comienza a crecer</a>
             </div>
             <div className="hero-scroll">
             <div className="scroll-line"></div>
