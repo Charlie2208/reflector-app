@@ -29,7 +29,7 @@ export default function NavbarF() {
       </button>
 
       <ul className={`nav-links ${isOpen ? 'nav-open' : ''}`}>
-        <li><a href="/#nosotros" onClick={() => setIsOpen(false)}>Nosotros</a></li>
+        <li><a href="/nosotros" onClick={() => setIsOpen(false)}>Nosotros</a></li>
         <li><a href="/#servicios" onClick={() => setIsOpen(false)}>Servicios</a></li>
         <li><a href="/#proceso" onClick={() => setIsOpen(false)}>Proceso</a></li>
         <li><a href="/blog" onClick={() => setIsOpen(false)}>Blog</a></li>
