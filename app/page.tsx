@@ -16,7 +16,7 @@ export default function Home() {
       <NavbarF />
       <Hero />
       {/* <StatsBar /> */}
-      <About />
+      {/* <About /> */}
       <Services />
       <Process />
       <CtaBands />
