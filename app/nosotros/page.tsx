@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import WhatsappButton from "@/components/WhatsappButton";
 
 export const metadata: Metadata = {
   title: 'Nosotros | Reflector Agencia de Marketing Digital',
@@ -207,6 +208,7 @@ export default function NosotrosPage() {
         </h2>
         <a href="/#contacto" className="btn-white">Hablemos</a>
       </section>
+      <WhatsappButton />
 
     </main>
   )
