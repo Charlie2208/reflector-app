@@ -205,7 +205,7 @@ export default function NosotrosPage() {
         <h2 className="section-title" style={{ color: 'var(--white)', maxWidth: '16ch', margin: '0 auto 1.5rem' }}>
           Hagamos crecer tu negocio.
         </h2>
-        <a href="/#contacto" className="btn-dark">Hablemos</a>
+        <a href="/#contacto" className="btn-white">Hablemos</a>
       </section>
 
     </main>
