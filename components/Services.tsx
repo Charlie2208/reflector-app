@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Services() {
   return (
     <section className="services" id="servicios">
@@ -13,6 +15,7 @@ export default function Services() {
       <div className="services-grid">
 
         {/* 01. Tiendas Online y Web */}
+        
         <div className="service-card">
           <div className="service-number">01</div>
           <div className="service-icon">
@@ -24,6 +27,13 @@ export default function Services() {
           </div>
           <h3>Creación de Tiendas Online (Ecommerce) y Páginas Web</h3>
           <p>Diseñamos tu e-commerce o sitio web listo para vender rápido, fácil de navegar para tus clientes y optimizado para celulares.</p>
+          <Link href="/servicios/ecommerce" className="service-btn">
+            Ver más
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </Link>
         </div>
 
         {/* 02. Publicidad Digital */}
@@ -36,6 +46,13 @@ export default function Services() {
           </div>
           <h3>Publicidad Digital (Meta Ads y Google Ads)</h3>
           <p>Creamos y administraciones tus anuncios en Facebook, Instagram y Google para atraer clientes verdaderamente interesados en comprar tus productos o servicios (con certificación oficial).</p>
+          <Link href="/servicios/" className="service-btn">
+            Ver más
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </Link>
         </div>
 
         {/* 03. Posicionamiento en Google */}
@@ -49,6 +66,13 @@ export default function Services() {
           </div>
           <h3>Posicionamiento en Google (SEO)</h3>
           <p>Optimizamos tu página para que aparezca en las primeras búsquedas de Google sin tener que pagar publicidad todo el tiempo.</p>
+          <Link href="/servicios/" className="service-btn">
+            Ver más
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </Link>
         </div>
 
         {/* 04. Gestión de Redes Sociales */}
@@ -61,6 +85,13 @@ export default function Services() {
           </div>
           <h3>Gestión de Redes Sociales y Contenido</h3>
           <p>Nos encargamos de diseñar tus publicaciones, Reels y mantener tus redes activas con una imagen profesional que atraiga y fidelice seguidores.</p>
+          <Link href="/servicios/" className="service-btn">
+            Ver más
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </Link>
         </div>
 
         {/* 05. Diseño de Marca */}
@@ -74,6 +105,13 @@ export default function Services() {
           </div>
           <h3>Diseño de Marca e Identidad Visual</h3>
           <p>Creamos el logo, colores y estilo visual de tu empresa para que proyectes la confianza que necesita un negocio moderno.</p>
+          <Link href="/servicios/" className="service-btn">
+            Ver más
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </Link>
         </div>
 
         {/* 06. Reportes y Medición */}
@@ -88,6 +126,13 @@ export default function Services() {
           </div>
           <h3>Reportes y Medición de Ventas</h3>
           <p>Instalamos las herramientas de seguimiento necesarias para que sepas exactamente cuánto vendes, de dónde vienen tus clientes y cómo rinde cada peso invertido.</p>
+          <Link href="/servicios/" className="service-btn">
+            Ver más
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </Link>
         </div>
 
       </div>

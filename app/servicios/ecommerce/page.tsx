@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import BackLink from '@/components/BackLink'
+import PlanChoice from '@/components/PlanChoice'
 
 export const metadata: Metadata = {
   title: 'Ecommerce con Shopify | Reflector Agencia de Marketing Digital',
@@ -119,17 +120,8 @@ export default function EcommercePage() {
         background: '#050505',
       }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-          <p className="section-label">Planes y precios</p>
-          <h2 className="section-title" style={{ color: 'var(--white)', marginBottom: '1rem' }}>
-            Elige el plan correcto para tu negocio
-          </h2>
-          <p style={{
-            color: 'rgba(247,246,244,0.5)',
-            fontSize: '0.9rem',
-            marginBottom: '3rem',
-          }}>
-            Todos los planes incluyen emisión de boleta o factura. Precios en pesos chilenos + IVA.
-          </p>
+         
+          <PlanChoice />
 
           <div style={{
             display: 'grid',
@@ -258,8 +250,6 @@ export default function EcommercePage() {
           </div>
         </div>
       </section>
-
-
     </main>
   )
 }
