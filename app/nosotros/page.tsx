@@ -20,7 +20,6 @@ const servicios = [
   { numero: '03', titulo: 'Posicionamiento en Google (SEO)', descripcion: 'Optimizamos tu página para que aparezca en las primeras búsquedas de Google sin tener que pagar publicidad todo el tiempo.' },
   { numero: '04', titulo: 'Gestión de Redes Sociales y Contenido', descripcion: 'Nos encargamos de diseñar tus publicaciones, Reels y mantener tus redes activas con una imagen profesional que atraiga y fidelice seguidores.' },
   { numero: '05', titulo: 'Diseño de Marca e Identidad Visual', descripcion: 'Creamos el logo, colores y estilo visual de tu empresa para que proyectes la confianza que necesita un negocio moderno.' },
-  { numero: '06', titulo: 'Reportes y Medición de Resultados', descripcion: 'Instalamos las herramientas de seguimiento necesarias para que sepas exactamente cuánto vendes, de dónde vienen tus clientes y cómo rinde cada peso invertido.' },
 ]
 
 export default function NosotrosPage() {

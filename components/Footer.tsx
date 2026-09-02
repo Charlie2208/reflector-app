@@ -19,10 +19,9 @@ export default function Footer(){
         <ul>
           <li><a href="/servicios/ecommerce">Creación de ecommerce</a></li>
           <li><a href="/servicios/publicidad-digital">Publicidad en Meta y Google</a></li>
-          <li><a href="/servicios">SEO</a></li>
-          <li><a href="/servicios">Gestión de redes sociales</a></li>
-          <li><a href="/servicios">Diseño de marca (branding)</a></li>
-          <li><a href="/servicios">Reportes y medición </a></li>
+          <li><a href="/servicios/seo">SEO</a></li>
+          <li><a href="/servicios/redes-sociales">Gestión de redes sociales</a></li>
+          <li><a href="/servicios/branding">Diseño de marca (branding)</a></li>
         </ul>
       </div>
       <div className="footer-col">

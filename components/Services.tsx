@@ -66,7 +66,7 @@ export default function Services() {
           </div>
           <h3>Posicionamiento en Google (SEO)</h3>
           <p>Optimizamos tu página para que aparezca en las primeras búsquedas de Google sin tener que pagar publicidad todo el tiempo.</p>
-          <Link href="/servicios/" className="service-btn">
+          <Link href="/servicios/seo" className="service-btn">
             Ver más
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <line x1="5" y1="12" x2="19" y2="12"/>
@@ -85,7 +85,7 @@ export default function Services() {
           </div>
           <h3>Gestión de Redes Sociales y Contenido</h3>
           <p>Nos encargamos de diseñar tus publicaciones, Reels y mantener tus redes activas con una imagen profesional que atraiga y fidelice seguidores.</p>
-          <Link href="/servicios/" className="service-btn">
+          <Link href="/servicios/redes-sociales" className="service-btn">
             Ver más
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <line x1="5" y1="12" x2="19" y2="12"/>
@@ -105,28 +105,7 @@ export default function Services() {
           </div>
           <h3>Diseño de Marca e Identidad Visual</h3>
           <p>Creamos el logo, colores y estilo visual de tu empresa para que proyectes la confianza que necesita un negocio moderno.</p>
-          <Link href="/servicios/" className="service-btn">
-            Ver más
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <line x1="5" y1="12" x2="19" y2="12"/>
-              <polyline points="12 5 19 12 12 19"/>
-            </svg>
-          </Link>
-        </div>
-
-        {/* 06. Reportes y Medición */}
-        <div className="service-card">
-          <div className="service-number">06</div>
-          <div className="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <line x1="18" y1="20" x2="18" y2="10"/>
-              <line x1="12" y1="20" x2="12" y2="4"/>
-              <line x1="6" y1="20" x2="6" y2="14"/>
-            </svg>
-          </div>
-          <h3>Reportes y Medición de Ventas</h3>
-          <p>Instalamos las herramientas de seguimiento necesarias para que sepas exactamente cuánto vendes, de dónde vienen tus clientes y cómo rinde cada peso invertido.</p>
-          <Link href="/servicios/" className="service-btn">
+          <Link href="/servicios/branding" className="service-btn">
             Ver más
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <line x1="5" y1="12" x2="19" y2="12"/>

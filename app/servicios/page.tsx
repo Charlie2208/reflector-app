@@ -34,28 +34,21 @@ const servicios = [
     titulo: 'Posicionamiento en Google (SEO)',
     descripcion: 'Optimizamos tu página para aparecer en las primeras búsquedas de Google sin pagar publicidad todo el tiempo.',
     slug: '/servicios/seo',
-    disponible: false,
+    disponible: true,
   },
   {
     numero: '04',
     titulo: 'Gestión de Redes Sociales y Contenido',
     descripcion: 'Nos encargamos de tus publicaciones, Reels y presencia en redes con una imagen profesional que atrae y fideliza seguidores.',
     slug: '/servicios/redes-sociales',
-    disponible: false,
+    disponible: true,
   },
   {
     numero: '05',
     titulo: 'Diseño de Marca e Identidad Visual',
     descripcion: 'Creamos el logo, colores y estilo visual de tu empresa para que proyectes la confianza que necesita un negocio moderno.',
     slug: '/servicios/branding',
-    disponible: false,
-  },
-  {
-    numero: '06',
-    titulo: 'Reportes y Medición de Resultados',
-    descripcion: 'Instalamos las herramientas necesarias para saber cuánto vendes, de dónde vienen tus clientes y cómo rinde cada peso invertido.',
-    slug: '/servicios/reportes',
-    disponible: false,
+    disponible: true,
   },
 ]
 
