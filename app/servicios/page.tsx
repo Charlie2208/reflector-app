@@ -26,8 +26,8 @@ const servicios = [
     numero: '02',
     titulo: 'Publicidad Digital (Meta Ads y Google Ads)',
     descripcion: 'Campañas en Facebook, Instagram y Google para atraer clientes que realmente quieren comprar tu producto o servicio.',
-    slug: '/servicios/meta-ads',
-    disponible: false,
+    slug: '/servicios/publicidad-digital',
+    disponible: true,
   },
   {
     numero: '03',

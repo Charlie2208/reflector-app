@@ -18,7 +18,7 @@ export default function Footer(){
         <h5>Servicios</h5>
         <ul>
           <li><a href="/servicios/ecommerce">Creación de ecommerce</a></li>
-          <li><a href="/servicios">Publicidad en Meta y Google</a></li>
+          <li><a href="/servicios/publicidad-digital">Publicidad en Meta y Google</a></li>
           <li><a href="/servicios">SEO</a></li>
           <li><a href="/servicios">Gestión de redes sociales</a></li>
           <li><a href="/servicios">Diseño de marca (branding)</a></li>
