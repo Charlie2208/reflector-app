@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
-import BackLink from '@/components/BackLink'
+import HeroServices from '@/components/HeroServices'
+import PlanChoice from '@/components/PlanChoice'
 
 export const metadata: Metadata = {
   title: 'Publicidad en Meta (Facebook e Instagram) y Google Ads | Reflector Agencia de Marketing Digital',
@@ -13,6 +14,12 @@ export const metadata: Metadata = {
     type: 'website',
   },
 }
+
+const HERO_DATA = {
+  title: 'Tu primera campaña a sólo $30.000+ IVA.',
+  description: 'Configuramos tu cuenta publicitaria en Meta para armar tu primera campaña y escalar tu negocio a una audiencia masiva. Sin complicaciones de configuración. Incluye la pieza gráfica.'
+}
+
 
 const planes = [
   {
@@ -67,3 +74,149 @@ const planes = [
 
 const WA_LINK = 'https://wa.me/56956075020'
 
+export default function AdsPages(){
+    return(
+        <main style={{ background: 'var(--dark)', color: 'var(--white)' }}>
+
+        <HeroServices 
+            title={HERO_DATA.title} 
+            description={HERO_DATA.description} 
+        />
+
+        <section style={{
+                padding: '6rem 5vw',
+                borderTop: '1px solid rgba(247,246,244,0.08)',
+                background: '#050505',
+            }}>
+            <PlanChoice />
+            <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
+            gap: '2px',
+          }}>
+            {planes.map((plan) => (
+              <div key={plan.nombre} style={{
+                background: plan.destacado ? 'rgba(0,39,255,0.12)' : 'rgba(247,246,244,0.03)',
+                border: plan.destacado ? '1px solid rgba(0,39,255,0.5)' : '1px solid rgba(247,246,244,0.07)',
+                padding: '2.5rem',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '1.2rem',
+                position: 'relative',
+              }}>
+                {plan.destacado && (
+                  <span style={{
+                    position: 'absolute',
+                    top: '1.2rem',
+                    right: '1.2rem',
+                    background: 'var(--blue)',
+                    color: 'var(--white)',
+                    fontSize: '0.65rem',
+                    letterSpacing: '0.18em',
+                    textTransform: 'uppercase',
+                    padding: '4px 10px',
+                    borderRadius: '2px',
+                    fontFamily: 'var(--font-open-sans)',
+                    fontWeight: 700,
+                  }}>
+                    {plan.tag}
+                  </span>
+                )}
+
+                {!plan.destacado && (
+                  <span style={{
+                    fontSize: '0.65rem',
+                    letterSpacing: '0.18em',
+                    textTransform: 'uppercase',
+                    color: 'rgba(247,246,244,0.4)',
+                    fontFamily: 'var(--font-open-sans)',
+                  }}>
+                    {plan.tag}
+                  </span>
+                )}
+
+                <h3 style={{
+                  fontFamily: 'var(--font-anton)',
+                  fontSize: '1.4rem',
+                  letterSpacing: '0.04em',
+                  color: 'var(--white)',
+                }}>{plan.nombre}</h3>
+
+                <div style={{
+                  fontFamily: 'var(--font-anton)',
+                  fontSize: '2.8rem',
+                  lineHeight: 1,
+                  color: plan.destacado ? 'var(--blue)' : 'var(--white)',
+                }}>
+                  {plan.precio}
+                  <span style={{
+                    fontSize: '0.9rem',
+                    fontFamily: 'var(--font-open-sans)',
+                    color: 'rgba(247,246,244,0.4)',
+                    marginLeft: '6px',
+                    fontWeight: 400,
+                  }}>+ IVA</span>
+                </div>
+
+                <p style={{
+                  fontSize: '0.9rem',
+                  lineHeight: '1.6',
+                  color: 'rgba(247,246,244,0.55)',
+                }}>{plan.descripcion}</p>
+
+                <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.7rem', flex: 1 }}>
+                  {plan.incluye.map((item, i) => (
+                    <li key={i} style={{
+                      fontSize: '0.88rem',
+                      lineHeight: '1.5',
+                      color: 'rgba(247,246,244,0.7)',
+                      display: 'flex',
+                      gap: '0.6rem',
+                      alignItems: 'flex-start',
+                    }}>
+                      <span style={{ color: 'var(--blue)', flexShrink: 0, marginTop: '2px' }}>✓</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+
+                <p style={{
+                  fontSize: '0.72rem',
+                  color: 'rgba(247,246,244,0.3)',
+                  lineHeight: '1.5',
+                  marginTop: '0.5rem',
+                }}>{plan.nota}</p>
+
+                <a
+                  href={`${WA_LINK}?text=Hola, me interesa el ${plan.nombre} de Reflector`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: 'block',
+                    textAlign: 'center',
+                    padding: '0.85rem',
+                    background: plan.destacado ? 'var(--blue)' : 'transparent',
+                    border: plan.destacado ? 'none' : '1px solid rgba(247,246,244,0.2)',
+                    color: 'var(--white)',
+                    textDecoration: 'none',
+                    fontFamily: 'var(--font-open-sans)',
+                    fontSize: '0.78rem',
+                    fontWeight: 700,
+                    letterSpacing: '0.14em',
+                    textTransform: 'uppercase',
+                    borderRadius: '2px',
+                    marginTop: 'auto',
+                    transition: 'background 0.25s, border-color 0.25s',
+                  }}
+                >
+                  Contratar por WhatsApp
+                </a>
+              </div>
+            ))}
+          </div>
+
+
+        </section>
+        </main>
+    )
+}

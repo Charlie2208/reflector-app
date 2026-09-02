@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
-import BackLink from '@/components/BackLink'
+import HeroServices from '@/components/HeroServices'
 import PlanChoice from '@/components/PlanChoice'
+
 
 export const metadata: Metadata = {
   title: 'Ecommerce con Shopify | Reflector Agencia de Marketing Digital',
@@ -13,6 +14,11 @@ export const metadata: Metadata = {
     locale: 'es_CL',
     type: 'website',
   },
+}
+
+const HERO_DATA = {
+  title: 'Tu tienda online lista en pocos días.',
+  description: 'Configuramos tu ecommerce en Shopify con todo lo necesario para empezar a vender: dominio, pasarela de pago, productos cargados y SEO básico. Sin complicaciones técnicas, tú solo te preocupas de vender.'
 }
 
 const planes = [
@@ -75,43 +81,11 @@ const WA_LINK = 'https://wa.me/56956075020'
 export default function EcommercePage() {
   return (
     <main style={{ background: 'var(--dark)', color: 'var(--white)' }}>
-
       {/* HERO */}
-      <section style={{
-        padding: '10rem 5vw 6rem',
-        background: 'var(--dark)',
-        maxWidth: '900px',
-        margin: '0 auto',
-        textAlign: 'center',
-      }}>
-        <BackLink href="/servicios" label="Todos los servicios"  />
-        <p className="section-label">Servicios</p>
-        <h1 className="section-title" style={{
-          fontSize: 'clamp(2.5rem, 6vw, 6rem)',
-          lineHeight: '0.95',
-          color: 'var(--white)',
-          marginBottom: '2rem',
-        }}>
-          Tu tienda online lista en pocos días.
-        </h1>
-        <p style={{
-          fontSize: 'clamp(1rem, 1.5vw, 1.2rem)',
-          lineHeight: '1.75',
-          color: 'rgba(247,246,244,0.7)',
-          fontWeight: 300,
-          marginBottom: '2.5rem',
-        }}>
-          Configuramos tu ecommerce en Shopify con todo lo necesario para empezar a vender: dominio, pasarela de pago, productos cargados y SEO básico. Sin complicaciones técnicas, tú solo te preocupas de vender.
-        </p>
-        <a
-          href={WA_LINK}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn-primary"
-        >
-          Cotizar por WhatsApp
-        </a>
-      </section>
+      <HeroServices 
+        title={HERO_DATA.title} 
+        description={HERO_DATA.description} 
+      />
 
       {/* PLANES */}
       <section style={{
