@@ -17,12 +17,12 @@ export default function Footer(){
       <div className="footer-col">
         <h5>Servicios</h5>
         <ul>
-          <li><a href="#">Estrategia Digital</a></li>
-          <li><a href="#">Meta Ads & Google Ads</a></li>
-          <li><a href="#">Gestión de RRSS</a></li>
-          <li><a href="#">Branding</a></li>
-          <li><a href="#">Storytelling</a></li>
-          <li><a href="#">Análisis de Datos</a></li>
+          <li><a href="/servicios/ecommerce">Creación de ecommerce</a></li>
+          <li><a href="/servicios">Publicidad en Meta y Google</a></li>
+          <li><a href="/servicios">SEO</a></li>
+          <li><a href="/servicios">Gestión de redes sociales</a></li>
+          <li><a href="/servicios">Diseño de marca (branding)</a></li>
+          <li><a href="/servicios">Reportes y medición </a></li>
         </ul>
       </div>
       <div className="footer-col">
