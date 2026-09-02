@@ -88,6 +88,7 @@ export default function AdsPages(){
                 borderTop: '1px solid rgba(247,246,244,0.08)',
                 background: '#050505',
             }}>
+         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
             <PlanChoice />
             <div style={{
             display: 'grid',
@@ -215,7 +216,7 @@ export default function AdsPages(){
             ))}
           </div>
 
-
+        </div>
         </section>
         </main>
     )
