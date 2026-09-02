@@ -1138,3 +1138,8 @@ body {
 .back-to-blog:hover {
   opacity: 0.75;
 }
+
+.back-link-left {
+  display: inline-block;
+  margin-bottom: 2rem;
+}
