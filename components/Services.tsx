@@ -46,7 +46,7 @@ export default function Services() {
           </div>
           <h3>Publicidad Digital (Meta Ads y Google Ads)</h3>
           <p>Creamos y administraciones tus anuncios en Facebook, Instagram y Google para atraer clientes verdaderamente interesados en comprar tus productos o servicios (con certificación oficial).</p>
-          <Link href="/servicios/" className="service-btn">
+          <Link href="/servicios/publicidad-digital" className="service-btn">
             Ver más
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <line x1="5" y1="12" x2="19" y2="12"/>
