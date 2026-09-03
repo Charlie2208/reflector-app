@@ -3,12 +3,12 @@ import HeroServices from '@/components/HeroServices'
 import PlanChoice from '@/components/PlanChoice'
 
 export const metadata: Metadata = {
-  title: 'Publicidad en Meta (Facebook e Instagram) y Google Ads | Reflector Agencia de Marketing Digital',
-  description: 'Arma tus campañas en instantes. Configuramos tu cuenta publicitaria para que puedas comenzar a captar nuevos clientes desde el día 1',
+   title: 'Gestión de Redes Sociales para Pymes | Reflector Agencia',
+  description: 'Aumenta el alcance de tu marca con contenido estratégico. Estrategias validadas con certificación oficial de Meta para Instagram, Facebook y LinkedIn.',
   openGraph: {
-    title: 'Publicidad digital en Meta y Google Ads | Reflector Agencia de Marketing Digital',
-    description: 'Empieza hoy mismo a vender mediante campañas digitales en Meta y Google, contamos con certificación oficial de Meta, para que tus camapañas tengan resultados reales y medibles',
-    url: 'https://reflector.cl/servicios/publicidad-digital',
+    title: 'Gestión de Redes Sociales y Creación de Contenido | Reflector Agencia',
+    description: 'Diseño visual impactante y contenido enfocado en ventas. Gestión integral de comunidad con el respaldo y certificación oficial de Meta.',
+    url: 'https://reflector.cl/servicios/redes-sociales',
     siteName: 'Reflector',
     locale: 'es_CL',
     type: 'website',
@@ -16,6 +16,6 @@ export const metadata: Metadata = {
 }
 
 const HERO_DATA = {
-  title: 'Tu primera campaña a sólo $30.000+ IVA.',
-  description: 'Configuramos tu cuenta publicitaria en Meta para armar tu primera campaña y escalar tu negocio a una audiencia masiva. Sin complicaciones de configuración. Incluye la pieza gráfica.'
+  title: 'Gestión de Redes Sociales para Pymes',
+  description: 'Aumenta el alcance de tu marca con contenido estratégico. Estrategias validadas con certificación oficial de Meta para Instagram, Facebook y LinkedIn.'
 }
