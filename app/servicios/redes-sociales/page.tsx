@@ -213,7 +213,7 @@ export default function SocialMediaPage(){
                       </div>
             
                     </div>
-                    </section>    
+            </section>    
                   
         
         </main>
