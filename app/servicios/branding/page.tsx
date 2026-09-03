@@ -22,6 +22,23 @@ const HERO_DATA = {
 
 export default function Branding(){
     return(
-        <main></main>
+       <main style={{ background: 'var(--dark)', color: 'var(--white)' }}>
+       
+                   <HeroServices 
+                               title={HERO_DATA.title} 
+                               description={HERO_DATA.description} 
+                           />
+                   <section
+                       style={{
+                       padding: '6rem 5vw',
+                       borderTop: '1px solid rgba(247,246,244,0.08)',
+                       background: '#050505',
+                   }}
+                       >
+                           
+                       
+                   </section>
+       
+               </main>
     )
 }
