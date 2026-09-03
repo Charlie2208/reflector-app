@@ -3,12 +3,12 @@ import HeroServices from '@/components/HeroServices'
 import PlanChoice from '@/components/PlanChoice'
 
 export const metadata: Metadata = {
-  title: 'Publicidad en Meta (Facebook e Instagram) y Google Ads | Reflector Agencia de Marketing Digital',
-  description: 'Arma tus campañas en instantes. Configuramos tu cuenta publicitaria para que puedas comenzar a captar nuevos clientes desde el día 1',
+  title: 'Identidad visual para tu negocio, logos, tipografías, paleta de colores | Reflector Agencia de Marketin',
+  description: 'Genera una imagen de negocio desde el comienzo, porque cómo te ven tus clientes importa y mucho',
   openGraph: {
-    title: 'Publicidad digital en Meta y Google Ads | Reflector Agencia de Marketing Digital',
-    description: 'Empieza hoy mismo a vender mediante campañas digitales en Meta y Google, contamos con certificación oficial de Meta, para que tus camapañas tengan resultados reales y medibles',
-    url: 'https://reflector.cl/servicios/publicidad-digital',
+    title: 'Identidad visual, brandig para tu negocio | Reflector Agencia de Marketing Digital',
+    description: 'Te armamos un kit con todo lo necesario para que tu negocio luzca profesional',
+    url: 'https://reflector.cl/servicios/branding',
     siteName: 'Reflector',
     locale: 'es_CL',
     type: 'website',
@@ -16,6 +16,12 @@ export const metadata: Metadata = {
 }
 
 const HERO_DATA = {
-  title: 'Tu primera campaña a sólo $30.000+ IVA.',
-  description: 'Configuramos tu cuenta publicitaria en Meta para armar tu primera campaña y escalar tu negocio a una audiencia masiva. Sin complicaciones de configuración. Incluye la pieza gráfica.'
+  title: 'Identidad visual, branding desde $100.000 CLP',
+  description: 'Si tienes la idea de tu negocio pero no sabes como darle actitud e identidad, este es el lugar correcto para ti'
+}
+
+export default function Branding(){
+    return(
+        <main></main>
+    )
 }
