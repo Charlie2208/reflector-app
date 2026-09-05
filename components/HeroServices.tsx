@@ -1,6 +1,7 @@
 import BackLink from '@/components/BackLink'
+import { WhatsappCTA } from '@/components/WhatsappCTA';
 
-const WA_LINK = 'https://wa.me/56956075020'
+// const WA_LINK = 'https://wa.me/56956075020'
 
 interface HeroServicesProps {
   title: string;
@@ -38,14 +39,9 @@ export default function HeroServices({ title, description }: HeroServicesProps) 
         {description}
       </p>
 
-      <a
-        href={WA_LINK}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="btn-primary"
-      >
+      <WhatsappCTA className="btn-primary">
         Cotizar por WhatsApp
-      </a>
+      </WhatsappCTA>
     </section>
   )
 }

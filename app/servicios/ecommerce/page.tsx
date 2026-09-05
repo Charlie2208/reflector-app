@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import HeroServices from '@/components/HeroServices'
 import PlanChoice from '@/components/PlanChoice'
+import { WhatsappCTA } from '@/components/WhatsappCTA';
 
 
 export const metadata: Metadata = {
@@ -195,30 +196,10 @@ export default function EcommercePage() {
                   marginTop: '0.5rem',
                 }}>{plan.nota}</p>
 
-                <a
-                  href={`${WA_LINK}?text=Hola, me interesa el ${plan.nombre} de Reflector`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    display: 'block',
-                    textAlign: 'center',
-                    padding: '0.85rem',
-                    background: plan.destacado ? 'var(--blue)' : 'transparent',
-                    border: plan.destacado ? 'none' : '1px solid rgba(247,246,244,0.2)',
-                    color: 'var(--white)',
-                    textDecoration: 'none',
-                    fontFamily: 'var(--font-open-sans)',
-                    fontSize: '0.78rem',
-                    fontWeight: 700,
-                    letterSpacing: '0.14em',
-                    textTransform: 'uppercase',
-                    borderRadius: '2px',
-                    marginTop: 'auto',
-                    transition: 'background 0.25s, border-color 0.25s',
-                  }}
-                >
-                  Contratar por WhatsApp
-                </a>
+                <WhatsappCTA 
+                  message={`Hola, me interesa el ${plan.nombre} de Reflector`} 
+                  destacado={plan.destacado} 
+                />
               </div>
             ))}
           </div>

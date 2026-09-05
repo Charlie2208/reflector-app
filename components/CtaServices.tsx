@@ -1,3 +1,5 @@
+ import { WhatsappCTA } from '@/components/WhatsappCTA';
+ 
  export default function CtaServices(){
     return(
 <section style={{
@@ -9,14 +11,9 @@
         <h2 className="section-title" style={{ color: 'var(--white)', maxWidth: '18ch', margin: '0 auto 1.5rem' }}>
           Hablemos y lo definimos juntos.
         </h2>
-        <a
-          href="https://wa.me/56956075020"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn-white"
-        >
-          Escribirnos por WhatsApp
-        </a>
+        <WhatsappCTA className="btn-white">
+        Escribirnos por WhatsApp
+      </WhatsappCTA>
       </section>
     )
  }
